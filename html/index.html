@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../script/script.js"></script>
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-text">
+        <h1>Simple, traffic-based pricing</h1>
+        <h4>
+          <span class="no-wrap">Sign-up for our 30-day trial.</span>
+          <span class="no-wrap">No credit card required.</span>
+        </h4>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div class="price-container">
+        <p class="item-count"><span class="count">100K</span> Pageviews</p>
+
+        <div class="range-button">
+          <input type="range" name="input-range" id="range" />
+          <img src="../images/icon-slider.svg" alt="icon-slider" />
+        </div>
+
+        <p>$16.00 <span class="price"></span> /month</p>
+      </div>
+
+      <div class="billing-section">
+        <p>Monthly Billing</p>
+
+        <!-- SLIDER BUTTON -->
+        <div class="slider-button">
+          <div class="slider-btn"></div>
+        </div>
+
+        <p>Yearly Billing <span class="discount">-25%</span></p>
+      </div>
+
+      <!-- FEATURS -->
+      <hr />
+      <section class="featurs">
+        <div class="featurs-item">
+          <img src="../images/icon-check.svg" alt="check" />
+          <p>Unlimited websites</p>
+        </div>
+
+        <div class="featurs-item">
+          <img src="../images/icon-check.svg" alt="check" />
+          <p>100% data ownership</p>
+        </div>
+
+        <div class="featurs-item">
+          <img src="../images/icon-check.svg" alt="check" />
+          <p>Email reports</p>
+        </div>
+
+        <button class="btn">Start my trial</button>
+      </section>
+    </main>
+  </body>
+</html>

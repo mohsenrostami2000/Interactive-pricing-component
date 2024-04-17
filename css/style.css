@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+}
+
+:root {
+  /* Colors -------*/
+  /*  Primary =========*/
+  --Soft-Cyan: hsl(174, 77%, 80%); /*(Full Slider Bar)*/
+  --Strong-Cyan: hsl(174, 86%, 45%); /*(Slider Backround)*/
+  --Light-Grayish-Red: hsl(14, 92%, 95%); /*(Discount Background)*/
+  --Light-Red: hsl(15, 100%, 70%); /*(Discount Text)*/
+  --Pale-Blue: hsl(226, 100%, 87%); /*(CTA Text)*/
+
+  /* Neutral ==================== */
+
+  --White: hsl(0, 0%, 100%); /*(Pricing Component Background)*/
+  --Very-Pale-Blue: hsl(230, 100%, 99%); /*(Main Background)*/
+  --Light-Grayish-Blue: hsl(224, 65%, 95%); /*(Empty Slider Bar)*/
+  --Light-Grayish-Blue: hsl(223, 50%, 87%); /*(Toggle Background)*/
+  --Grayish-Blue: hsl(225, 20%, 60%); /*(Text)*/
+  --Dark-Desaturated-Blue: hsl(227, 35%, 25%); /*(Text & CTA Background)*/
+}
+
+body {
+  background-color: var(--Very-Pale-Blue);
+}
+
+header {
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 30vh;
+
+  text-align: center;
+  position: relative;
+
+  & .no-wrap {
+    text-wrap: nowrap;
+  }
+
+  & .header-text {
+    position: absolute;
+    margin-top: 15%;
+
+    & h1 {
+      font-weight: 800;
+      font-size: 20px;
+      color: var(--Dark-Desaturated-Blue);
+    }
+
+    & h4 {
+      font-weight: 600;
+      color: var(--Grayish-Blue);
+      font-size: 15px;
+      margin: 0 1rem;
+    }
+  }
+}
+
+.main-container {
+  background-color: var(--White);
+  box-shadow: 0px 0px 5px var(--Light-Grayish-Blue);
+  border-radius: 5px;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.5rem 1rem;
+
+  & p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-weight: 600;
+  }
+
+  & .range-button {
+    background-color: red;
+    & .range {
+      position: relative;
+    }
+
+    & img {
+      position: absolute;
+    }
+  }
+
+  & hr {
+    margin: 1rem -1rem;
+    border: 1px solid var(--Light-Grayish-Blue);
+    width: calc(100% + 2rem);
+  }
+
+  & .featurs {
+    line-height: 2;
+
+    & .featurs-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+
+      & img {
+        width: 12px;
+      }
+    }
+
+    & button {
+      background-color: var(--Dark-Desaturated-Blue);
+      color: var(--Light-Grayish-Blue);
+      font-weight: 600;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      padding: 0.6rem 2.5rem;
+      margin-top: 1rem;
+    }
+  }
+}
