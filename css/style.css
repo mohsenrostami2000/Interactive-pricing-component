@@ -36,6 +36,7 @@ header {
   background-image: url(../images/pattern-circles.svg);
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 3rem;
 
   min-height: 30vh;
 
@@ -47,8 +48,10 @@ header {
   }
 
   & .header-text {
-    position: absolute;
-    margin-top: 15%;
+    /* position: absolute; */
+    margin: 0 auto;
+    /* left: 50%;
+    transform: translateX(-50%); */
 
     & h1 {
       font-weight: 800;
@@ -81,13 +84,34 @@ header {
   }
 
   & .range-button {
-    background-color: red;
-    & .range {
-      position: relative;
-    }
+    margin: 1rem 0;
+    & input[type="range"] {
+      appearance: none;
+      cursor: pointer;
+      width: 100%;
 
-    & img {
-      position: absolute;
+      &::-webkit-slider-runnable-track {
+        background-image: linear-gradient(
+          90deg,
+          var(--Strong-Cyan) 50%,
+          var(--Light-Grayish-Blue) 1px
+        );
+        border-radius: 10px;
+        height: 0.5rem;
+      }
+
+      &::-webkit-slider-thumb {
+        appearance: none;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background-color: var(--Strong-Cyan);
+        margin-top: calc(4px - 17.5px);
+        background-image: url(../images/icon-slider.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 12px 10px var(--Soft-Cyan);
+      }
     }
   }
 
